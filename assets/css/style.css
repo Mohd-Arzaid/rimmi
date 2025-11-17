@@ -1,0 +1,37 @@
+body {
+    color: white !important;
+}
+
+.probootstrap_section h2,
+.probootstrap_section h3,
+.probootstrap_section p,
+.probootstrap_section a,
+.probootstrap-thumbnail h3,
+.lead,
+.heading,
+.media-body h3,
+.probootstrap_footer,
+.probootstrap_footer a,
+.probootstrap_footer p,
+.service span,
+.service p {
+    color: white !important;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.probootstrap-thumbnail {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.media {
+    background: rgba(0, 0, 0, 0.5) !important;
+} 
