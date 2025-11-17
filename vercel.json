@@ -1,25 +1,7 @@
 {
   "version": 2,
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/places-master/index.html"
-    },
-    {
-      "source": "/index.html",
-      "destination": "/places-master/index.html"
-    },
-    {
-      "source": "/monument-recognition.html",
-      "destination": "/places-master/monument-recognition.html"
-    },
-    {
-      "source": "/onepage.html",
-      "destination": "/places-master/onepage.html"
-    },
-    {
-      "source": "/assets/:path*",
-      "destination": "/places-master/assets/:path*"
-    }
-  ]
+  "buildCommand": "echo 'No build needed'",
+  "outputDirectory": "places-master",
+  "cleanUrls": true,
+  "trailingSlash": false
 }
