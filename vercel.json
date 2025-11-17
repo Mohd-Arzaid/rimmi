@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "places-master/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/places-master/index.html"
+    },
+    {
+      "src": "/monument-recognition",
+      "dest": "/places-master/monument-recognition.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/places-master/$1"
+    }
+  ]
+}
