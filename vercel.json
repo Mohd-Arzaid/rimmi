@@ -1,23 +1,25 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "places-master/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/places-master/index.html"
+      "source": "/",
+      "destination": "/places-master/index.html"
     },
     {
-      "src": "/monument-recognition",
-      "dest": "/places-master/monument-recognition.html"
+      "source": "/index.html",
+      "destination": "/places-master/index.html"
     },
     {
-      "src": "/(.*)",
-      "dest": "/places-master/$1"
+      "source": "/monument-recognition.html",
+      "destination": "/places-master/monument-recognition.html"
+    },
+    {
+      "source": "/onepage.html",
+      "destination": "/places-master/onepage.html"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/places-master/assets/:path*"
     }
   ]
 }
